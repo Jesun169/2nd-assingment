@@ -13,15 +13,27 @@
 
 .inter-normal{
   font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   font-optical-sizing: auto;
   font-weight: <weight>;
   
   font-style: normal;
 }
+.page-bg-color{
+  background-color: aliceblue;
+}
 
 .color-1{
   color: #E95A08;
+}
+.button-primary{
+  background-color: #E95A08;
+  color: #FFFFFF;
+  padding: 20px 75px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
 }
 /* nav styles */
 nav{
@@ -45,18 +57,111 @@ nav ul li a{
 display: flex;
  margin: 221px 150px;
 }
-.banner-content{
-i
-  
+.banner-image{
  
 }
+/* card section */
+.card-heading{
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
+.card{
+  margin: 0 auto;
+  padding-left: 150px;
+  text-align: center
+ 
+
+}
+.card-selection{
+ margin: 0 auto;
+ padding-right: 130px;
+ 
+ 
+ gap: 20px;
+
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+
+ 
+}
+/* flower-plants*/
+.flower-plants{
+  display: flex;
+  justify-content: space-between;
+  padding:200px 350px;
+  width: 1140px;
+  height: 597px;
+}
+.flower-contents{
+  height: 521px;
+  width: 540px;
+  padding: 
+}
+.flower-title{
+font-size: 50px;
+font-weight: bold;
+}
+.flower-description{
+  font-size: 22px;
+  font-weight: 300px;
+}
+/* text over image  */
+.Latest-deals{
+margin: 221px 250px;
+}
+.Latest-deals-title{
+  text-align: center;
+}
+.Latest-deals-title{
+  font-size: 50px;
+  font-weight: bold;
+}
+.Latest-deals-description{
+  font-size: 22px;
+  font-weight: 200px;
+}
+.deals-image{
+  position: relative;
+ 
+  width: 100%;
+  max-width: 1140px;    height: 400px;
+  display: flex;
+  margin-bottom: 5px;
+  gap: 5px;
+   text-align: center;
+}
+.deals-image img {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+ 
+  /* padding: 10px 20px; */
+  border-radius: 5px; 
+ 
+}
+.image-text {
+  text-align: center;
+  position: relative;
+  top: 50%;              /* Center vertically */
+  left: 50%;             /* Center horizontally */
+  transform: translate(-50%, -50%);
+  color: white;          /* Text color */
+  font-size: 24px;       /* Font size */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional background */
+  padding: 10px 20px;
+
+}
+
+
 
 /* responsive part */
 @media screen and (max-width: 576px) {
-
+.body-width{
+  max-width: 100%;
+}
 .navbar {
-      margin: 13px 16px;
-      
+      margin: 13px 20px;
       }
       .logo{
         width: 63px;
@@ -64,17 +169,26 @@ i
       }
   .banner{
     flex-direction: column-reverse ;
-   padding-right: 50px;
-     text-align: center;
   }
   .banner-image{
-   width:50rem;
-    height: 405px;
+    margin-right: 100px;
+    max-width: 100%;
+  }
+  .banner-content{
+   
+  }
+  .noto-serif-nornal{
+    font-size: 24px;
   }
   
-  }
+  .card-selection{
+    display: grid;
+ grid-template-columns: repeat(2, 1fr);
  
+  }
+
+  
  .hide{
   display: none;
  }
-
+}
