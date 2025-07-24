@@ -55,10 +55,14 @@ nav ul li a{
 /* banner styles */
 .banner{
 display: flex;
- margin: 221px 150px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 10%;0px;
 }
 .banner-image{
- 
+ max-width: 100%;
+  height: auto;
+  flex: 1 1 300px;
 }
 /* card section */
 .card-heading{
@@ -66,10 +70,15 @@ display: flex;
   font-size: 42px;
   font-weight: bold;
 }
+.card-main{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
 .card{
   margin: 0 auto;
   padding-left: 150px;
-  text-align: center
+  text-align: center;
  
 
 }
@@ -89,7 +98,7 @@ grid-template-columns: repeat(4, 1fr);
 .flower-plants{
   display: flex;
   justify-content: space-between;
-  padding:200px 350px;
+  padding: 200px 350px;
   width: 1140px;
   height: 597px;
 }
@@ -157,25 +166,25 @@ margin: 221px 250px;
 
 /* responsive part */
 @media screen and (max-width: 576px) {
-.body-width{
-  max-width: 100%;
-}
-.navbar {
+
+  .navbar {
       margin: 13px 20px;
       }
-      .logo{
+  .logo{
         width: 63px;
         height: 38px;
       }
   .banner{
+    display: flex;
     flex-direction: column-reverse ;
-  }
+    width: 393px;
+    margin-left: 0;
+  padding-left: 0;
+    
+  } 
   .banner-image{
-    margin-right: 100px;
-    max-width: 100%;
-  }
-  .banner-content{
-   
+   width: 50%;
+    padding-right: 0;
   }
   .noto-serif-nornal{
     font-size: 24px;
